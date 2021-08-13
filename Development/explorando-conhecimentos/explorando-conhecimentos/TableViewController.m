@@ -43,7 +43,9 @@
     }
     
     if ([[pokemonsArray objectAtIndex:indexPath.row] isEqual:@"Squirtle"]) {
-        cell.contentView.backgroundColor = [UIColor systemBlueColor];
+        cell.contentView.backgroundColor = [UIColor colorNamed:@"water"];
+    } else {
+        cell.contentView.backgroundColor = [UIColor whiteColor];
     }
     
     cell.labelCell.text = [pokemonsArray objectAtIndex:indexPath.row];

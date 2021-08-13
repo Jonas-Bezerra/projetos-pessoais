@@ -21,9 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    pokemonsArray = [[NSArray alloc] initWithObjects:@"Bulbasaur", @"Ivysaur",@"Venusaur",@"Charmander",@"Charmeleon",@"Charizard",@"Squirtle",@"Wartortle",@"Blastoise", nil];
-    nameImageArray = [[NSArray alloc] initWithObjects:@"bulbasaur",@"Ivysaur",@"venusaur",@"charmander",@"Charmeleon",@"charizard",@"squirtle",@"wartortle",@"blastoise2", nil];
-    idPokemon = [[NSArray alloc] initWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",nil];
+    pokemonsArray = [[NSArray alloc] initWithObjects:@"Bulbasaur", @"Ivysaur",@"Venusaur",@"Charmander",@"Charmeleon",@"Charizard",@"Squirtle",@"Wartortle",@"Blastoise",@"Squirtle", nil];
+    nameImageArray = [[NSArray alloc] initWithObjects:@"bulbasaur",@"Ivysaur",@"venusaur",@"charmander",@"Charmeleon",@"charizard",@"squirtle",@"wartortle",@"blastoise2",@"squirtle", nil];
+    idPokemon = [[NSArray alloc] initWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",nil];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
@@ -42,6 +42,10 @@
         cell = [tableView dequeueReusableCellWithIdentifier:@"myCell"];
     }
     
+    if ([[pokemonsArray objectAtIndex:indexPath.row] isEqual:@"Squirtle"]) {
+        cell.contentView.backgroundColor = [UIColor systemBlueColor];
+    }
+    
     cell.labelCell.text = [pokemonsArray objectAtIndex:indexPath.row];
     cell.countLabel.text = [idPokemon objectAtIndex:indexPath.row];
     [cell.imageCell setImage: [UIImage imageNamed: [NSString stringWithFormat:@"%@.png", [nameImageArray objectAtIndex:indexPath.row]]]];
@@ -49,9 +53,18 @@
     return cell;
 }
 
-
-
-
-
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    
+    CGSize constraint = CGSizeMake(152, CGFLOAT_MAX);
+    CGSize boundingBox = [[nameImageArray objectAtIndex:indexPath.row] boundingRectWithSize:constraint options:NSStringDrawingUsesLineFragmentOrigin attributes:@{NSFontAttributeName:[UIFont systemFontOfSize:25.0]}  context:nil].size;
+    
+    NSLog(@"%f", ceil(boundingBox.height));
+    
+    if (ceil(boundingBox.height) < 80) {
+        return 80;
+    } else {
+        return ceil(boundingBox.height) + 4;
+    }
+}
 
 @end

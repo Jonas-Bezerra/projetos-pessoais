@@ -10,6 +10,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface MainViewController : UIViewController
+- (IBAction)openModal:(UIButton *)sender;
+- (IBAction)goingToTable:(UIButton *)sender;
 
 @end
 

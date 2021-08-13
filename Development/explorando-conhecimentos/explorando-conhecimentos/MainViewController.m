@@ -6,6 +6,8 @@
 //
 
 #import "MainViewController.h"
+#import "TableViewController.h"
+#import "ModalViewController.h"
 
 @interface MainViewController ()
 
@@ -18,14 +20,19 @@
     // Do any additional setup after loading the view from its nib.
 }
 
-/*
-#pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+
+- (IBAction)goingToTable:(UIButton *)sender {
+    TableViewController *tvc = [[TableViewController alloc] initWithNibName:@"TableViewController" bundle:nil];
+
+        [[self navigationController] pushViewController:tvc animated:YES];
 }
-*/
 
+- (IBAction)openModal:(UIButton *)sender {
+    ModalViewController *mvc = [[ModalViewController alloc] init];
+    
+    [self presentViewController:mvc
+                    animated:YES
+                    completion:nil];
+}
 @end

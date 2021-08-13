@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2FDCBBDB26C69E8C00670B01 /* ModalViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FDCBBD926C69E8C00670B01 /* ModalViewController.m */; };
+		2FDCBBDC26C69E8C00670B01 /* ModalViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2FDCBBDA26C69E8C00670B01 /* ModalViewController.xib */; };
 		2FF1E10A26C59FF7002A2F72 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF1E10926C59FF7002A2F72 /* AppDelegate.m */; };
 		2FF1E10D26C59FF7002A2F72 /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FF1E10C26C59FF7002A2F72 /* SceneDelegate.m */; };
 		2FF1E11526C59FF8002A2F72 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FF1E11426C59FF8002A2F72 /* Assets.xcassets */; };
@@ -21,6 +23,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2FDCBBD826C69E8C00670B01 /* ModalViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModalViewController.h; sourceTree = "<group>"; };
+		2FDCBBD926C69E8C00670B01 /* ModalViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModalViewController.m; sourceTree = "<group>"; };
+		2FDCBBDA26C69E8C00670B01 /* ModalViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalViewController.xib; sourceTree = "<group>"; };
 		2FF1E10526C59FF7002A2F72 /* explorando-conhecimentos.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "explorando-conhecimentos.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FF1E10826C59FF7002A2F72 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2FF1E10926C59FF7002A2F72 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -81,6 +86,9 @@
 				2FF1E12626C5A461002A2F72 /* TableViewController.h */,
 				2FF1E12726C5A461002A2F72 /* TableViewController.m */,
 				2FF1E12826C5A461002A2F72 /* TableViewController.xib */,
+				2FDCBBD826C69E8C00670B01 /* ModalViewController.h */,
+				2FDCBBD926C69E8C00670B01 /* ModalViewController.m */,
+				2FDCBBDA26C69E8C00670B01 /* ModalViewController.xib */,
 				2FF1E11426C59FF8002A2F72 /* Assets.xcassets */,
 				2FF1E12B26C5A4B1002A2F72 /* TableViewCell.h */,
 				2FF1E12C26C5A4B1002A2F72 /* TableViewCell.m */,
@@ -150,6 +158,7 @@
 			files = (
 				2FF1E11826C59FF8002A2F72 /* LaunchScreen.storyboard in Resources */,
 				2FF1E12F26C5A4B1002A2F72 /* TableViewCell.xib in Resources */,
+				2FDCBBDC26C69E8C00670B01 /* ModalViewController.xib in Resources */,
 				2FF1E12526C5A3CC002A2F72 /* MainViewController.xib in Resources */,
 				2FF1E11526C59FF8002A2F72 /* Assets.xcassets in Resources */,
 				2FF1E12A26C5A461002A2F72 /* TableViewController.xib in Resources */,
@@ -165,6 +174,7 @@
 			files = (
 				2FF1E10A26C59FF7002A2F72 /* AppDelegate.m in Sources */,
 				2FF1E12E26C5A4B1002A2F72 /* TableViewCell.m in Sources */,
+				2FDCBBDB26C69E8C00670B01 /* ModalViewController.m in Sources */,
 				2FF1E11B26C59FF8002A2F72 /* main.m in Sources */,
 				2FF1E10D26C59FF7002A2F72 /* SceneDelegate.m in Sources */,
 				2FF1E12926C5A461002A2F72 /* TableViewController.m in Sources */,

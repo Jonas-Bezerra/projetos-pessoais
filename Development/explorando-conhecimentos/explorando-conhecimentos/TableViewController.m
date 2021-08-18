@@ -21,9 +21,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    pokemonsArray = [[NSArray alloc] initWithObjects:@"Bulbasaur", @"Ivysaur",@"Venusaur",@"Charmander",@"Charmeleon",@"Charizard",@"Squirtle",@"Wartortle",@"Blastoise",@"Squirtle", nil];
-    nameImageArray = [[NSArray alloc] initWithObjects:@"bulbasaur",@"Ivysaur",@"venusaur",@"charmander",@"Charmeleon",@"charizard",@"squirtle",@"wartortle",@"blastoise2",@"squirtle", nil];
-    idPokemon = [[NSArray alloc] initWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",nil];
+    pokemonsArray = [[NSArray alloc] initWithObjects:@"Bulbasaur", @"Ivysaur",@"Venusaur",@"Charmander",@"Charmeleon",@"Charizard",@"Squirtle",@"Wartortle",@"Blastoise",@"Squirtle",@"Bulbasaur", @"Ivysaur",@"Venusaur",@"Charmander",@"Charmeleon",@"Charizard",@"Squirtle",@"Wartortle",@"Blastoise",@"Squirtle", nil];
+    nameImageArray = [[NSArray alloc] initWithObjects:@"bulbasaur",@"Ivysaur",@"venusaur",@"charmander",@"Charmeleon",@"charizard",@"squirtle",@"wartortle",@"blastoise2",@"squirtle",@"bulbasaur",@"Ivysaur",@"venusaur",@"charmander",@"Charmeleon",@"charizard",@"squirtle",@"wartortle",@"blastoise2",@"squirtle", nil];
+    idPokemon = [[NSArray alloc] initWithObjects:@"1",@"2",@"3",@"4",@"5",@"6",@"7",@"8",@"9",@"10",@"11",@"12",@"13",@"14",@"15",@"16",@"17",@"18",@"19",@"20",nil];
 }
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {

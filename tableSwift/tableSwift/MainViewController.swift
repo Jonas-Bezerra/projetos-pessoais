@@ -9,9 +9,6 @@ import UIKit
 
 class MainViewController: UIViewController {
     
- 
-    
-    
     var celulasPokemon : [PokeList] = [
         PokeList(idPokemon: "1", pokemon: "Bulbasaur", iconePokemon: "bulbasaur"),
         PokeList(idPokemon: "2", pokemon: "Ivysaur", iconePokemon: "Ivysaur"),
